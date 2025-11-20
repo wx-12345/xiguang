@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>静夜灯下分享会 · Night Lamp Sharing</title>
+    <style>
+        /* 页面整体：薄荷牛奶绿背景 + 居中布局 */
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            background-color: #E8FFF4;
+            color: #3b3025;
+            text-align: center;
+        }
+
+        /* 主内容"卡片"区域 */
+        .page {
+            display: inline-block;
+            background-color: #F9FFFC;
+            box-shadow: 0 0 30px rgba(80, 120, 100, 0.2);
+            text-align: left;
+            max-width: 780px;
+        }
+
+        /* 标题样式 */
+        h1, h2, h3, h4, h5, h6 {
+            color: #2D5A42;
+            letter-spacing: 1px;
+        }
+
+        /* 对齐类 */
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        /* 重点介绍段落 */
+        p#intro {
+            font-size: 140%;
+            font-weight: bold;
+            color: #2A7E56;
+        }
+
+        /* 活动介绍文本 */
+        .intro-text {
+            line-height: 1.7;
+            letter-spacing: 0.5px;
+        }
+
+        /* 表格区域标题 */
+        .section-title {
+            text-align: center;
+        }
+
+        /* 表格样式 */
+        table {
+            width: 100%;
+            background-color: #F0FFF6;
+            font-size: 90%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #D4EBE0;
+            font-weight: bold;
+            text-align: left;
+            line-height: 2.2;
+            padding: 8px;
+        }
+
+        td {
+            line-height: 2.0;
+            padding: 8px;
+            border-bottom: 1px solid #D4EBE0;
+        }
+
+        /* 斑马纹和悬停效果 */
+        table tr:nth-child(even) {
+            background-color: #E6F9F0;
+        }
+
+        table tr:hover {
+            background-color: #C8E6D7;
+        }
+
+        /* 表格链接样式 */
+        div table a {
+            font-weight: bold;
+            font-size: 110%;
+            color: #1E6D4A;
+        }
+
+        /* 全局链接样式 */
+        a:link {
+            color: #2A7E56;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #5A8A75;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #3AA870;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #1E6D4A;
+            text-decoration: underline;
+        }
+
+        /* 带类名的链接 */
+        a.green:link {
+            color: #2A7E56;
+        }
+
+        a.green:active {
+            color: #1E6D4A;
+        }
+
+        a.teal:link {
+            color: #1E6D4A;
+        }
+
+        a.teal:active {
+            color: #2A7E56;
+        }
+
+        /* 段落首字样式 */
+        p::first-letter {
+            font-size: 180%;
+            color: #2A7E56;
+        }
+
+        /* div第一行样式 */
+        div::first-line {
+            color: #1E6D4A;
+            font-weight: bold;
+        }
+
+        /* 底部公告样式 */
+        .notice {
+            font-size: 90%;
+            line-height: 1.6;
+            color: #2D5A42;
+        }
+
+        /* 分隔线 */
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, rgba(45,90,66,0), rgba(45,90,66,0.3), rgba(45,90,66,0));
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+
+    <!-- 顶部标题区 -->
+    <h1 class="center">静夜灯下分享会 · Night Lamp Sharing</h1>
+
+    <div class="divider"></div><br>
+
+    <!-- 活动介绍区 -->
+    <div>
+        <h2 id="intro" class="center">本周主题：夜色中的阅读与分享</h2>
+
+        <p class="intro-text right">
+            每周五晚七点，城市书店将开启静夜灯下分享会，邀请你在温馨的灯光中，与书籍和思想为伴。
+        </p>
+
+        <p class="intro-text center">
+            我们准备了舒适的阅读角、轻柔的背景音乐和精选茶点，你可以分享最近读到的好书，或聆听他人的阅读故事。
+        </p>
+
+        <p id="intro">
+            每次活动限额20人，报名成功后将收到确认短信。请提前15分钟到场，以便我们为您预留最佳位置。
+        </p>
+    </div>
+
+    <br><div class="divider"></div><br>
+
+    <!-- 活动报名情况表格区 -->
+    <div>
+        <h3 class="section-title">本周分享会报名名单</h3>
+
+        <table>
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>分享主题</th>
+                <th>联系方式</th>
+                <th>报名状态</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td><a href="https://example.com/person1">张明</a></td>
+                <td>《夜晚的潜水艇》读书感悟</td>
+                <td>138****1234</td>
+                <td>已确认席位</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td><a href="https://example.com/person2">李华</a></td>
+                <td>科幻小说中的未来城市</td>
+                <td>139****5678</td>
+                <td>已确认席位</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>王芳</td>
+                <td>日本文学中的孤独美学</td>
+                <td>137****9012</td>
+                <td>待确认</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>赵伟</td>
+                <td>历史书籍推荐与解读</td>
+                <td>136****3456</td>
+                <td>候补名单</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td><a href="https://example.com/person3">刘婷</a></td>
+                <td>诗歌与夜晚的对话</td>
+                <td>135****7890</td>
+                <td>已确认席位</td>
+            </tr>
+        </table>
+    </div>
+
+    <br><div class="divider"></div><br>
+
+    <!-- 页面链接区 -->
+    <div class="center">
+        <p>
+            <a class="green" href="https://example.com/past-events">查看往期分享回顾</a><br>
+            <a class="teal" href="https://example.com/suggest">推荐分享主题</a>
+        </p>
+    </div>
+
+    <br><div class="divider"></div><br>
+
+    <!-- 底部公告区 -->
+    <div class="notice">
+        静夜灯下分享会举办地点：城市书店二楼阅读区（需从左侧楼梯上楼）<br>
+        活动时间：每周五晚19:00-21:00（请准时到达）<br>
+        特别提示：如需使用店内投影设备展示PPT，请提前24小时与工作人员联系
+    </div>
+
+    <br>
+
+</div>
+
+</body>
+</html>
